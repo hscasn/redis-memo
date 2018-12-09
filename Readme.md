@@ -1,5 +1,7 @@
 # redis-memo
 
+[![CircleCI](https://circleci.com/gh/hscasn/redis-memo/tree/master.svg?style=svg)](https://circleci.com/gh/hscasn/redis-memo/tree/master)
+
 Memoize Go functions with Redis.
 
 The locking mechanism is simple, not using Redlock.
