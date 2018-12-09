@@ -2,9 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/golang:1.9
+      - image: circleci/golang:1.11
       - image: redis:4.0
-    working_directory: /go/src/github.com/hscasn/redis-memo
+    working_directory: ~/go/src/github.com/hscasn/redis-memo
     steps:
       - checkout
       - run: go get -v -t -d ./...
