@@ -1,0 +1,6 @@
+test:
+	go clean --testcache ./...
+	go test -bench . -cover ./...
+
+launch-redis:
+	docker run --rm -d --name redis -p 6379:6379 redis:4.0
